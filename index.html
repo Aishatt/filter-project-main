@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+
+  <!-- main css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font awesome -->
+
+  <title>Grandma's shop</title>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <nav>
+       <img src="img/logo.svg" id="image" srcset="">
+    <div class="navlink">
+     
+      <div class="link">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Store</a>
+      </div>
+      <div class="phone">
+        <img  style="margin-right: 5px;" src="img/3059446.png" width="8%">
+        0928625242
+      </div>
+      <div class="item">
+      <span style="margin-right: 15px;"><img src="img/shopping-cart-solid.svg" width="10%" srcset=""> </span>  2 items - $10.87
+      </div>
+
+    </div>
+    <div class="icon show" >
+      <img src="img/icons8-menu-24.png" srcset="">
+    </div>
+    </nav>
+
+    <!--<div class="d-none none">
+      <img src="img/logo.svg" id="image1" srcset="">
+      <div class="icon none" onclick="showlist()">
+        <img src="img/icons8-menu-24.png" srcset="">
+      </div>
+    </div> -->
+
+  </header>
+  <!--banner -->
+  <section>
+    <div class="banner">
+      <div class="title">
+        Welcome To <span style="color:#ef7998; font-size: 2em;">Grandma's</span>
+        <p >Explore</p>
+      </div>
+    </div>
+  </section>
+   <!--About -->
+  <section id="sect">
+    <div class="abt">
+      <p style="font-size: 2em;">About<span style="color:#ef7998; font-size: 2em;">Us</span></p>
+      <p style="opacity: .7;"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ullam dignissimos
+        iste corrupti commodi ab temporibus harum reiciendis fugiat aliquid error non dolorem
+        nostrum quaerat, molestiae saepe consequatur! Nisi, velit! nostrum quaerat, molestiae saepe consequatur! Nisi,
+        velit!</p>
+      <a id="explore" href="#items">Explore</a>
+    </div>
+    <div id="imgv"><img src="img/sweets-1.jpeg" id="sweet" srcset=""></div>
+  </section>
+ <!--store -->
+  <section id="items">
+
+    <h2>Our <span style="color:#ef7998; font-size: 2em;">Store</span> </h2>
+    <div class="item-links">
+      <p id="pasteries" data-filter="all">ALL</p>
+      <p id="pasteries" data-filter="sweet">SWEET</p>
+      <p id="pasteries" data-filter="cake">CAKES</p>
+      <p id="pasteries" data-filter="cupcake">CUPCAKES</p>
+      <p id="pasteries" data-filter="doughnut">DOUGHNUTS</p>
+    </div>
+    <br>
+    <form action="">
+    <button id="form"><img src="img/search icon.png" width="60%" srcset=""></button>
+    <input type="search" placeholder="item...">
+    </form>
+   
+    <div class="cards">
+      <div class="card sweet " data-item="sweet">
+           <img src="img/sweets-1.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        
+        <div class="list">
+          <p>Sweet Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card sweet" data-item="sweet">
+        <img src="img/sweets-2.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Sweet Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+
+      </div>
+      <div class="card sweet" data-item="sweet">
+        <img src="img/sweets-3.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Sweet Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+
+      </div>
+      <div class="card cake" data-item="cake">
+        <img src="img/cake-1.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+
+      </div>
+      <div class="card cake" data-item="cake">
+        <img src="img/cake-2.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card cake" data-item="cake">
+        <img src="img/cake-3.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card cupcake" data-item="cupcake">
+        <img src="img/cupcake-1.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cupcake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card cupcake" data-item="cupcake">
+        <img src="img/cupcake-2.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cupcake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+
+      <div class="card cupcake" data-item="cupcake">
+        <img src="img/cupcake-3.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Cupcake Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card doughnut" data-item="doughnut">
+
+        <img src="img/doughnut-3.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Doughnut Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card doughnut" data-item="doughnut">
+        <img src="img/doughnut-2.jpeg" class="item-img">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Doughnut Item</p>
+          <p><b>$</b>5</p>
+        </div>
+
+      </div>
+      <div class="card doughnut" data-item="doughnut">
+        <img src="img/doughnut-1.jpeg" alt="">
+        <span id="icon"><img src="img/shopping-cart-solid.svg" ></span>
+        <div class="list">
+          <p>Doughnut Item</p>
+          <p><b>$</b>5</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of store items -->
+
+<!--modals -->
+<div class="modal-container show">
+ <div class="modal-img ">
+  </div>
+  <div class="modal-buttons">
+    <button id="prev">prev</button>
+    <button id="nxt">next</button>
+  </div>
+<div class="close"> <b>x</b></div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navlink{
+  display: flex;
+  padding: 1% 5% 1% 2%;
+  justify-content: space-between;
+}
+nav{
+   background-color: blanchedalmond;
+    display: flex;
+    padding: 2px 10px;
+    flex-direction: row;  justify-content: space-between;
+}
+/* nav links */
+.link>a{
+text-decoration: none;
+color: #ef7998;
+margin: 0 15px;
+font-size: 25px;
+}
+.link,.item,.phone{
+  align-self: center;
+   font-size: 1rem;
+}
+.item {
+border: 2px solid rgb(218, 161, 161);
+padding: 5px;
+width: 20%;
+cursor: pointer;
+}
+.banner {
+background-image: url(img/headerBcg.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 90vh;
+  font-size: 2rem;
+  
+}
+
+.banner>.title{
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  text-align: center;
+}
+#explore{
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ef7998;
+}
+#explore:hover{
+  border: 1px solid #ef7998;
+}
+@keyframes example {
+ 80%{border-color: aqua;transition: ease-in-out;} 
+ 40%{border-color: var(--mainPink);}
+ 10%{border-color: var(--yellowTrans);}
+ 5%{border-color: none; margin-left: 10%;color: rgb(221, 221, 221);}
+}
+.title>p{
+  border-radius: 0.25rem;
+ width: fit-content ;
+  cursor: pointer;
+padding:5px 20px;
+  font-size: 1.5rem;
+  margin-left: 35%;
+  margin-top: 2%;
+  color: #ef7998;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 3s;
+border:3px solid black;
+
+
+}
+.title>p:hover{
+  background-color: black;
+  color: #ef7998;
+
+}
+#sect{
+  display:grid;
+  grid-template-columns: repeat(2,6fr);
+  margin: 4em 10em;
+}
+.abt{
+width: 90%;
+}
+#imgv>img{
+  width: 100%;
+  
+}
+#imgv{
+ 
+  position: relative;
+
+}
+#imgv:hover:before{
+    top: 0;
+    left: 0;
+}
+#imgv::before{
+ animation-name: example;
+ animation-duration: 8s;
+ animation-iteration-count: infinite;
+  content: "";
+  width: 100%;
+   position: absolute;
+  top:  -1%;
+  
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+ transition: all .8s ease-in-out;
+  z-index: -1;
+
+}
+#items{
+text-align: center;
+font-size: 1.5em;
+padding-top: 10px;
+background-color:rgb(238, 238, 238); ;
+}
+.item-links{
+  display: inline-flex;
+  font-size: .8em
+ 
+}
+.item-links>p{
+   margin: 0px 40px;
+}
+.cards{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 1em;
+  margin: 3em 3em 0 3em ;
+padding-bottom: 3em;
+}
+.list{
+  display: flex;
+  justify-content: space-around;
+}
+.card>img{
+  width: 100%;
+ border-top-left-radius : 2%;
+ border-top-right-radius:2%;
+ transition: all 2s ease-in-out;
+}
+.card{
+  position: relative;
+  border-radius: 2%;
+   background-color: white;
+}
+.d-none{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  align-items: center;
+}
+.none{
+display: none;
+}
+#pasteries{
+  cursor: pointer;
+}
+#form{
+  width: 40px;
+background-color: rgb(180, 175, 175);
+display: inline-block;
+border: none;
+  height: 30px;
+left: 32%;
+margin-top: 5.2px;
+position: absolute;
+
+}
+form{
+  margin-top: 4%;
+ 
+}
+form>input{
+  outline: none;
+  border: none;
+  align-items: center;
+  position: relative;
+  height: 31px;
+  width: 30%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#pasteries:hover{
+  color: #ef7998;
+}
+#icon>img{
+  width: 10%;  position: absolute;
+  bottom:10;
+  right: 0;
+  z-index: -1;
+}
+.card:hover #icon>img{
+  width: 10%;  position: absolute;
+  bottom: 24%;
+  right: 0;
+  background-color: var(--mainYellow);
+  padding: 10px;
+  border-top-left-radius: 1rem;
+  transition: all .8s ease-in-out;
+  transform: translateY(100%,100%);
+  z-index: 1;
+}
+@media screen and (max-width:765px) {
+  #image{
+    display: block;
+  }
+  nav{
+    padding: 5px 30px;
+  }
+nav>.icon{
+  display: block;
+  align-self: center;
+}
+  .cards{
+    display: grid;
+    grid-template-columns:repeat(1,12fr);
+   margin-top: 2em;
+  }
+  .item-links>p{
+    margin: 10px 10px;
+  }   
+ #form{
+   margin-left: -38px;
+ }   
+ form>input{
+   width: 50%;
+ }
+ form{
+   margin-left: 10%;
+ }
+ .item-links{
+   display: inline-block;
+   margin: 20px 0px;
+ }
+ #sect{
+  display:grid;
+  grid-template-columns: repeat(1,12fr);
+  margin: 4em ;
+}
+.abt{
+width: 100%;
+margin-bottom: 2em;
+}
+#imgv>img{
+  width: 100%;
+  
+}
+.navlink{
+ display:inline-flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: blanchedalmond;
+  width: 70%;
+  left: 15%;
+  top: 8%;
+  transform: translateX(100%,100%);
+  transition: all 1s ease-in-out;
+  animation-name: example;
+  animation-duration: 2s;
+  display: none;
+}
+.navlink>img{
+  width: 12%;
+}
+.item,.phone {
+ margin-top: 15px;
+  }
+  .phone{
+    
+    text-align: center;
+  }
+.none{
+  display: flex;
+}
+#logo{
+  display: none;
+}
+.card:hover #icon>img{
+  bottom:26.5%;
+}
+.item {
+border: none;
+  width: 60%;
+ 
+  }
+  .modal-img{
+   
+    height: 50vh;
+  }
+   .close{
+    margin-top: -10%;
+    margin-right: -25%;
+   } 
+  
+}
+
+.search-box {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+.modal-container{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /*display: none;*/
+ 
+}
+.close{
+  font-size: 40px;
+  color: rgb(199, 23, 23);
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+}
+.close:hover{
+  color: #ef7998;
+
+}
+.show{
+  display: none;
+}
+.modal-img{
+  background-image: url(img/doughnut-2.jpeg) ;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin: 10% 5% 0% 5%;
+}
+.modal-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 31.5%;
+}
