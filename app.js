@@ -114,13 +114,19 @@ nxtbtn.addEventListener('click', function () {
 });
 //close button
 const closebtn = document.querySelector('.close')
+
 closebtn.addEventListener('click', function () {
     modalContainer.style.display = 'none'
 });
 //CART
+
 cart.addEventListener('click', function () {
     if(cartContainer.classList.contains('cart')){
         cartContainer.classList.remove('cart')}
-     
-})
+       
+});
 
+const closecart = document.querySelector('.close-cart')
+closecart.addEventListener('click', function () {
+    cartContainer.classList.add('cart')
+});
