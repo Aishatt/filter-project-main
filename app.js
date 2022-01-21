@@ -11,6 +11,7 @@ const cartContainer = document.querySelector('#cart-container')
 const clearCart=document.querySelector('#clear-cart')
 const checkout=document.querySelector('.checkout')
 
+navicon.style.cursor='pointer';
 navicon.addEventListener('click', function () {
     if (navicon.classList.contains('show')){
            navbar.style.display = 'inline-flex'
